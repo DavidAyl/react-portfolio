@@ -3,8 +3,8 @@ import React from 'react';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav bg-secondary d-flex justify-content-around nav-tabs">
-      <li className="bg-dark text-white">
+    <ul className="nav mx-0 bgForNav d-flex justify-content-around nav-tabs">
+      <li className="bgForItems text-white">
         <a
           href="#home"
           onClick={() => handlePageChange('Home')}
@@ -14,7 +14,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           Home
         </a>
       </li>
-      <li className="bg-dark text-white">
+      <li className="bgForItems text-white">
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
@@ -24,7 +24,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           About
         </a>
       </li>
-      <li className="bg-dark text-white">
+      <li className="bgForItems text-white">
         <a
           href="#mywork"
           onClick={() => handlePageChange('myWork')}
@@ -34,7 +34,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           My Work
         </a>
       </li>
-      <li className="bg-dark text-white">
+      <li className="bgForItems text-white">
         <a
           href="#contact"
 

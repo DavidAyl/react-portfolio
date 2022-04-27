@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import MyWork from './pages/mywork';
 import Contact from './pages/Contact';
+import Footer from './Footer';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -17,8 +18,9 @@ export default function PortfolioContainer() {
     }
     if (currentPage === 'myWork') {
       return <MyWork />;
+    } else {
+      return <Contact />;
     }
-    return <Contact />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
@@ -27,6 +29,7 @@ export default function PortfolioContainer() {
     <div>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
+      <Footer />
     </div>
   );
 }
